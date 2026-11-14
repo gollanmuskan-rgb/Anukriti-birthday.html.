@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Anukriti 💗</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #ffe0ec, #fce4ff, #fff0f5);
+    color: #7b315c;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 65px 20px 40px;
+}
+
+h1 {
+    font-size: clamp(38px, 8vw, 65px);
+    color: #e75480;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #d94f91;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.subtitle {
+    font-size: 19px;
+}
+
+.heart {
+    font-size: 35px;
+    animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+    to { transform: scale(1.25); }
+}
+
+section {
+    padding: 35px 20px;
+    margin: 20px auto;
+    max-width: 850px;
+}
+
+.card {
+    background: rgba(255,255,255,0.75);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #e9a8c5;
+    margin: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.photo {
+    min-height: 160px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffb6d5, #e8c5ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 0 4px 12px #e8a7c7;
+}
+
+.photo img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+button {
+    background: #e75480;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px #e9a8c5;
+}
+
+button:hover {
+    background: #c83e70;
+}
+
+#surprise {
+    display: none;
+    margin-top: 25px;
+    font-size: 20px;
+    color: #d63384;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 35px 15px;
+    color: #bd4c82;
+}
+
+.floating {
+    position: fixed;
+    bottom: -30px;
+    font-size: 22px;
+    animation: floatUp 8s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="heart">💗</div>
+    <h1>Happy Birthday<br>Anukriti!</h1>
+    <p class="subtitle">To our sweetest girl, our forever bestie 🌷</p>
+    <p>✨ A little website made with lots of love ✨</p>
+</header>
+
+<section class="card">
+    <h2>Dear Anukriti 💕</h2>
+    <p>
+        Today is all about YOU! A beautiful soul deserves
+        the most beautiful day. May your life always be
+        filled with happiness, endless laughter, love and
+        magical memories.
+        <br><br>
+        You make ordinary moments special, and we are
+        so lucky to have you in our lives.
+        <br><br>
+        Keep smiling, keep shining and never stop being
+        the amazing person you are!
+    </p>
+    <div class="heart">🌸🎀🌸</div>
+</section>
+
+<section>
+    <h2>Our Little Memory Gallery 📸</h2>
+    <p>Every picture holds a beautiful memory!</p>
+
+    <div class="gallery">
+        <div class="photo">
+            <img src="photo1.jpg" alt="Memory 1"
+            onerror="this.style.display='none';this.parentElement.innerHTML='💗 Memory 1 💗'">
+        </div>
+
+        <div class="photo">
+            <img src="photo2.jpg" alt="Memory 2"
+            onerror="this.style.display='none';this.parentElement.innerHTML='🌸 Memory 2 🌸'">
+        </div>
+
+        <div class="photo">
+            <img src="photo3.jpg" alt="Memory 3"
+            onerror="this.style.display='none';this.parentElement.innerHTML='✨ Memory 3 ✨'">
+        </div>
+
+        <div class="photo">
+            <img src="photo4.jpg" alt="Memory 4"
+            onerror="this.style.display='none';this.parentElement.innerHTML='🦋 Memory 4 🦋'">
+        </div>
+
+        <div class="photo">
+            <img src="photo5.jpg" alt="Memory 5"
+            onerror="this.style.display='none';this.parentElement.innerHTML='🎀 Memory 5 🎀'">
+        </div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Reasons We Love You 💞</h2>
+    <p>
+        🌷 Your beautiful smile<br>
+        💗 Your caring heart<br>
+        🦋 Your crazy and fun personality<br>
+        ✨ The memories we make together<br>
+        🎀 Simply because you are YOU!
+    </p>
+</section>
+
+<section class="card">
+    <h2>A Little Surprise For You 🎁</h2>
+    <p>There's something we want to tell you...</p>
+
+    <button onclick="showSurprise()">
+        Open Your Surprise 💌
+    </button>
+
+    <div id="surprise">
+        Anukriti, no matter where life takes us,
+        we hope our friendship always stays this special.
+        <br><br>
+        You deserve all the happiness in the world.
+        Never forget how loved and precious you are!
+        <br><br>
+        Lots of love,<br>
+        <b>Muskan & Tamanna 💗</b>
+        <br><br>
+        Happy Birthday, Bestie! 🎂
+    </div>
+</section>
+
+<footer>
+    Made with endless love 💗<br>
+    By Muskan & Tamanna<br>
+    🌸 Forever Besties 🌸
+</footer>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "floating";
+    heart.innerHTML = ["💗", "💕", "🌸", "✨", "🦋"][
+        Math.floor(Math.random() * 5)
+    ];
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 700);
+</script>
+
+</body>
+</html>
